@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #212121;
+}
+
+.container {
+    width: 100%;
+    max-width: 1120px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav {
+    ul {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        list-style: none;
+    }
+
+    li {
+        margin: 0 20px 0 0;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-family: sans-serif;
+        color: #fff;
+    }
+}
+
+.text {
+    &-alizarin {
+        color: salmon;
+    }
+
+    &-wisteria {
+        color: palevioletred;
+    }
+
+    &-emerland {
+        color: seagreen;
+    }
+
+    &-sunflower {
+        color: orangered;
+    }
+}
+
+.block-cover {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    // border: 3px solid #fff;
+    width: 180px;
+    height: 180px;
+    margin: 20px;
+    transition: all .5s;
+
+
+    &.hide {
+        opacity: 1;
+        pointer-events: none;
+        animation: a1 2s forwards;
+    }
+
+    &.alizarin {
+        border: 2px solid salmon;
+    }
+
+    &.wisteria {
+        border: 2px solid palevioletred;
+    }
+
+    &.emerland {
+        border: 2px solid seagreen;
+    }
+
+    &.sunflower {
+        border: 2px solid orangered;
+    }
+}
+
+@keyframes a1 {
+    to {
+        opacity: 0;
+        height: 0;
+        width: 0;
+        padding: 0;
+        margin: 0;
+        bottom: 0;
+    }
+}

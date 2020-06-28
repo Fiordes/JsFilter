@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #212121;
+}
+
+.container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+nav li {
+  margin: 0 20px 0 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+.text-alizarin {
+  color: salmon;
+}
+
+.text-wisteria {
+  color: palevioletred;
+}
+
+.text-emerland {
+  color: seagreen;
+}
+
+.text-sunflower {
+  color: orangered;
+}
+
+.block-cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box {
+  width: 180px;
+  height: 180px;
+  margin: 20px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.box.hide {
+  opacity: 1;
+  pointer-events: none;
+  -webkit-animation: a1 2s forwards;
+          animation: a1 2s forwards;
+}
+
+.box.alizarin {
+  border: 2px solid salmon;
+}
+
+.box.wisteria {
+  border: 2px solid palevioletred;
+}
+
+.box.emerland {
+  border: 2px solid seagreen;
+}
+
+.box.sunflower {
+  border: 2px solid orangered;
+}
+
+@-webkit-keyframes a1 {
+  to {
+    opacity: 0;
+    height: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+  }
+}
+
+@keyframes a1 {
+  to {
+    opacity: 0;
+    height: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
